@@ -1,0 +1,21 @@
+# Object files and firmware images
+*.o
+*.a
+*.out
+*.elf
+*.bin
+*.hex
+*.map
+
+# Compiled binaries: gcc -o drops them next to the source with the same
+# name minus the .c, so they have no extension. Ignore the naming pattern,
+# then whitelist the file types that belong in the repo.
+[0-9][0-9]-*
+!*.c
+!*.h
+!*.md
+
+# Editor / OS noise
+.vscode/
+*.swp
+.DS_Store
